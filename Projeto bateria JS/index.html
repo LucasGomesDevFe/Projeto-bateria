@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bateria</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Bateria interativa</h1>
+
+    <div class="drum-set">
+        <!-- Pratos -->
+        <div class="cymbals">
+            <div data-key="keyq" class="key cymbal"><br><small>Hit-Hat</small></div>
+            <div data-key="keyw" class="key cymbal"><br><small>Crash</small></div>
+            <div data-key="keye" class="key cymbal"><br><small>Ride</small></div>
+        </div>
+
+        <!-- Tambores -->
+        <div class="drums">
+            <div data-key="keya" class="key drum"><br><small>Caixa</small></div>
+            <div data-key="keys" class="key drum"><br><small>Tom 2</small></div>
+            <div data-key="keyd" class="key drum"><br><small>Tom 3</small></div>
+        </div>
+
+        <!-- Bumbo e Surdo -->
+        <div class="bass-floor">
+            <div data-key="keyz" class="key bass"><br><small>Bumbo</small></div>
+            <div data-key="keyx" class="key floor"><br><small>Surdo</small></div>
+            <div data-key="keyc" class="key floor"><br><small>Surdo</small></div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="volume">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+        </div>
+        <div class="composer">
+            <input type="text" id="composer" placeholder="Faça uma composição..."/>
+            <button>Tocar</button>
+            <button id="record">Gravar</button>
+        </div>
+    </div>
+    <footer>Criado em conjunto por Lucas Gomes e B7web</footer>
+
+    <audio id="s_keyq" src="sounds/keyq.wav"></audio>
+    <audio id="s_keyw" src="sounds/keyw.wav"></audio>
+    <audio id="s_keye" src="sounds/keye.wav"></audio>
+    <audio id="s_keya" src="sounds/keya.wav"></audio>
+    <audio id="s_keys" src="sounds/keys.wav"></audio>
+    <audio id="s_keyd" src="sounds/keyd.wav"></audio>
+    <audio id="s_keyz" src="sounds/keyz.wav"></audio>
+    <audio id="s_keyx" src="sounds/keyx.wav"></audio>
+    <audio id="s_keyc" src="sounds/keyc.wav"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
